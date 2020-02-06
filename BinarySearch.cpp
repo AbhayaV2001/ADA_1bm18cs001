@@ -6,12 +6,13 @@ int main()
 	int n,i,k,ele,l,h,mid,count,fpos,lpos;
 	cout<<"Enter the number of elements in array"<<endl;
 	cin>>n;
-	int a[n];
+	int a[n],temp;
 	l = 0;
 	h = n-1;
 	cout<<"Enter the elements of array\n";
 	for(int j=0;j<n;j++)
 		cin>>a[j];
+	sort(a,a+n);
 	cout<<"Enter the element to be searched"<<endl;
 	cin>>ele;
 	while(l<=h)
