@@ -28,3 +28,14 @@ int main()
    	cout << "The program took "<< fixed<<setprecision(10)<<time_taken <<" seconds to execute\n";	
 	return 0;
 }
+/*Enter the number of elements:
+5
+Enter the array elements:
+1 14 5 3 66
+Sorted array:
+1
+3
+5
+14
+66
+The program took 0.0000030000 seconds to execute*/
