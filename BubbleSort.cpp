@@ -30,15 +30,3 @@ int main()
    	cout << "The program took "<< fixed<<setprecision(10)<<time_taken <<" seconds to execute\n";	
 	return 0;
 }
-/*Enter the number of elements:
-5
-Enter the array elements:
-1 2 3 4 5
-Sorted array:
-1
-2
-3
-4
-5
-The program took 0.0000030000 seconds to execute
-*/
