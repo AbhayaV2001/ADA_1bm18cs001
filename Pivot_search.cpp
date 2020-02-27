@@ -1,18 +1,17 @@
-#include<algorithm>
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 int bsearch(int a[], int l, int h, int key);
 int main()
 {
 	int a[20],i,j,n,r,key,temp,pos,pivot;
-	cout<<"Enter the number of elements in the array\n";
+	cout<<"Enter the number of elements:\n";
 	cin>>n;
-	cout<<"Enter the elements\n";	
+	cout<<"Enter the elements:\n";	
 	for(i=0;i<n;i++)
 		cin>>a[i];
-	cout<<"Enter the key element to be searched\n";
+	cout<<"Enter the key:\n";
 	cin>>key;
-	cout<<"Enter the number of times of rotation or pivot\n";
+	cout<<"Enter the number of times to rotate:\n";     //rotate the array r no of times
 	cin>>r;
 	for(i=0;i<r;i++)
 	{
@@ -21,11 +20,11 @@ int main()
 			a[j+1] = a[j];
 		a[0] = temp;
 	}
-	cout<<"\nThe rotated array is\n";
+	cout<<"\nRotated array:\n";
 	for(i=0;i<n;i++)
 		cout<<a[i]<<" ";
 	cout<<endl;
-	pivot = r-1;
+	pivot = r-1;                                       //do binary search on the rotated array
 	if(key>a[0])
 		pos = bsearch(a,1,pivot,key);
 	else if(key<a[0])
@@ -33,9 +32,9 @@ int main()
 	else
 		pos = 0;
 	if(pos!=-1)
-		cout<<"The key element "<<key<<" is present at position "<<pos<<"\n";
+		cout<<"The key element:"<<key<<" found at position: "<<pos<<"\n";
 	else
-		cout<<"The key element "<<key<<" is not present\n";
+		cout<<"The key element:"<<key<<" is not found in the array\n";
 	return 0;
 }
 int bsearch(int a[], int l, int h, int key)
