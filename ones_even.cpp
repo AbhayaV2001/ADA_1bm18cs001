@@ -43,3 +43,4 @@ int main()
 	cout<<"required sum = "<<sum<<endl;
 	return 0;
 }
+
