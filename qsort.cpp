@@ -62,3 +62,14 @@ int partition(int low, int high, int a[])
 	swap(a[low],a[j]);
 	return j;
 }
+/*
+Enter the number of elements
+5
+Enter the elements
+0 57 63 16 2
+
+The time required for quick sort is 0.0000000
+
+The sorted array is
+0 2 16 57 63
+*/
